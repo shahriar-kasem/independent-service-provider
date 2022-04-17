@@ -1,7 +1,8 @@
 .header-container{
-    width: 100%;
-    top: 0;
-    position: fixed;
+    background-color: antiquewhite;
+}
+.therapy-logo{
+    border-radius: 20px
 }
 .custom-link{
     text-decoration: none;

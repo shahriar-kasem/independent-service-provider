@@ -12,9 +12,7 @@ import Header from './Components/Shared/Header/Header';
 function App() {
   return (
     <div>
-      <div className='home-header'>
       <Header></Header>
-      </div>
       <Routes>
           <Route path='/' element={<Home></Home>}></Route>
           <Route path='/home' element={<Home></Home>}></Route>
