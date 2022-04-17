@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Psychodynamic therapy",
+        "price": "2500",
+        "description": "Therapists use this approach to help people identify unconscious beliefs that can impact their mood and behavior — many times stemming from their childhood. For example, someone who was disciplined as a child for any grade below an A might have an unconscious belief that they will be punished for anything less than perfect. “The goal is to increase insight into whatever kind of unconscious material might be driving behavior in order to promote some kind of change through the person understanding themselves and why they do certain things,” says Dr. Potter. This is a good option for those who have problems with self-esteem, self-confidence and self-expression. It can also help those who have depression and anxiety.",
+        "img": "https://i.ibb.co/5sPpTQ7/psychodynamic-therapy.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Behavioral therapy",
+        "price": "1500",
+        "description": "A contrast to psychodynamic therapy, behavioral therapy focuses on the present. There's less focus on why a behavior started and more emphasis on the barriers to changing it and why that behavior is being rewarded. “We want to reinforce desired behaviors that we want to increase,” says Dr. Potter. “And then we want to have consequences for undesired behaviors. Used often with children, it establishes rewards for things like making their bed and removes privileges for things like acting out. Some subsets of behavioral therapy include: Systematic desensitization: This practice slowly introduces exposure to something you might fear like spiders. Aversion therapy: The idea here is to create consequences for behaviors that you want to stop like biting your nails. Flooding: A more direct approach to dealing with phobias, this practice places you in a situation where you're confronted with your fear or phobia so you can process all your feelings at once. Behavioral therapy is good for dealing with phobias, substance use disorders and obsessive-compulsive disorder (OCD).",
+        "img": "https://i.ibb.co/RzD69Lr/behavioral-therapy.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Cognitive behavioral therapy (CBT)",
+        "price": "2000",
+        "description": "Cognitive behavioral therapy combines some of the principles of behavioral therapy with the theory that our thoughts, feeling or behaviors are all connected and influence each other. “So if we think differently or if we act differently, we could likely feel differently,” says Dr. Potter. “And sometimes our feelings are going to also influence how we think and act.” A lot of CBT involves talking with your therapist about your thought process about any situations you'd like to discuss. Your therapist will ask what you were thinking and how it made you feel. “It's really trying to identify and shift patterns of thinking that might be problematic or inaccurate,” says Dr. Potter. The goal is to replace harmful or negative thought patterns or behaviors with ones that helpful and positive. People with mood disorders, anxiety, eating disorders and OCD might find CBT helpful.",
+        "img": "https://i.ibb.co/3BTY7DY/cognitive-behavioral-therapy.png"
+    },
+    {
+        "id": 4,
+        "name": "Dialectical behavioral therapy (DBT)",
+        "price": "25000",
+        "description": "Originally developed as a specific treatment for borderline personality disorder, this type of therapy focuses on developing skills to cope with challenging situations. “Dialectical” simply means a logical discussion of ideas and opinions, and the goal is to learn how to deal with and accept difficult emotions,” she says. “It's used to treat disorders that have a lot of emotional dysfunction,” says Dr. Potter. “It helps people develop mindfulness, emotional regulation and interpersonal effectiveness skills. It helps them regulate negative emotions and have healthier relationships.” Dialectical behavioral therapy is useful for people who are having suicidal thoughts and other self-destructive behaviors.",
+        "img": "https://i.ibb.co/YPsb07P/dialectical-behavioral-therapy.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Humanistic therapy",
+        "price": "2000",
+        "description": "Focusing on people's strengths, humanistic therapy can help people achieve their goals and feel more satisfied in life. It focuses less on treating symptoms and problems. “You will usually focus on self-discovery and self-acceptance,” says Dr. Potter. “It could be really helpful for someone who is doing OK in life but wants to grow.” Sessions are less structured than other therapies and are good for those who want to discuss existential issues or big picture issues. It can help you understand your worldview and develop true-self acceptance. Anyone dealing with self-esteem issues, relationship issues, depression or anxiety might find humanistic therapy beneficial.",
+        "img": "https://i.ibb.co/4NgqykV/humanistic-therapy.jpg"
+    }
+]

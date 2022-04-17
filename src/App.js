@@ -11,7 +11,7 @@ import Header from './Components/Shared/Header/Header';
 
 function App() {
   return (
-    <div>
+    <section>
       <Header></Header>
       <Routes>
           <Route path='/' element={<Home></Home>}></Route>
@@ -23,7 +23,7 @@ function App() {
           <Route path='/checkout' element={<Checkout></Checkout>}></Route>
           <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
-    </div>
+    </section>
   );
 }
 
