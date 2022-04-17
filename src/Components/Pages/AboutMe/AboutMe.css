@@ -1,0 +1,23 @@
+
+.about-container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-container img{
+    width: 500px;
+}
+.about-text{
+    width: 80%;
+}
+
+@media only screen and (max-width:576px){
+    .about-container img{
+        width: 300px;
+    }
+    .about-text{
+        width: 95%;
+    }
+}
