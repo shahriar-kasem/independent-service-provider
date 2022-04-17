@@ -1,0 +1,17 @@
+
+
+.google-login-container {
+    display: flex;
+    align-items: center;
+}
+
+.google-login {
+    height: 1px;
+    width: 100%;
+    background-color: rgb(180, 139, 92);
+}
+
+.google-login-btn{
+    display: flex;
+    justify-content: center;
+}

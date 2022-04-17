@@ -8,6 +8,8 @@ import Checkout from './Components/Pages/Home/Checkout/Checkout';
 import NotFound from './Components/NotFound/NotFound';
 import Header from './Components/Shared/Header/Header';
 import ServiceDetails from './Components/Pages/Home/Home/ServiceDetails.js/ServiceDetails';
+import Login from './Components/Login/Login';
+import SignUp from './Components/SignUp/SignUp';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path='/blogs' element={<Blogs></Blogs>}></Route>
           <Route path='/about' element={<AboutMe></AboutMe>}></Route>
           <Route path='/checkout' element={<Checkout></Checkout>}></Route>
+          <Route path='/login' element={<Login></Login>}></Route>
+          <Route path='/signup' element={<SignUp></SignUp>}></Route>
           <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
     </section>

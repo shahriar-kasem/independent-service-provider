@@ -11,3 +11,11 @@
 .custom-link:hover{
     color: orange;
 }
+.custom-btn{
+    border: none;
+    background-color: antiquewhite;
+    color: rgb(101, 94, 118);
+}
+.custom-btn:hover{
+    color: orange;
+}

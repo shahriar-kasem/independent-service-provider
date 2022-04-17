@@ -1,0 +1,11 @@
+
+.signup-container{
+    display: flex;
+    justify-content: center;
+}
+.custom-anchor{
+    text-decoration: none;
+}
+.custom-anchor:hover{
+    color: tomato;
+}
