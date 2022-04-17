@@ -1,10 +1,11 @@
-import React from 'react';
 import './AboutMe.css';
 
 const AboutMe = () => {
+
+
     return (
         <div>
-            
+            <p>This is about.</p>
         </div>
     );
 };

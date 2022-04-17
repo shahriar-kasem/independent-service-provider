@@ -1,7 +1,6 @@
 import './ServiceDetails.css';
 
 const ServiceDetails = () => {
-   
 
     return (
         <div>
