@@ -8,3 +8,9 @@
     width: 90%;
     margin: 2px;
 }
+.question-answer{
+    border-radius: 25px;
+}
+.answer{
+    color: rgb(203, 71, 255);
+}
