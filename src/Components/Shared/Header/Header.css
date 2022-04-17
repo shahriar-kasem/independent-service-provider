@@ -1,1 +1,7 @@
-
+.custom-link{
+    text-decoration: none;
+    color: rgb(101, 94, 118);
+}
+.custom-link:hover{
+    color: orange;
+}

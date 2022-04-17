@@ -7,11 +7,13 @@ import Blogs from './Components/Pages/Blogs/Blogs';
 import AboutMe from './Components/Pages/AboutMe/AboutMe';
 import Checkout from './Components/Pages/Home/Checkout/Checkout';
 import NotFound from './Components/NotFound/NotFound';
+import Header from './Components/Shared/Header/Header';
+import Footer from './Components/Shared/Footer/Footer';
 
 function App() {
   return (
     <div>
-      <h1>Hello world!</h1>
+      <Header></Header>
       <Routes>
           <Route path='/' element={<Home></Home>}></Route>
           <Route path='/home' element={<Home></Home>}></Route>
@@ -22,6 +24,7 @@ function App() {
           <Route path='/checkout' element={<Checkout></Checkout>}></Route>
           <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
