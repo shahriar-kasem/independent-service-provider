@@ -6,7 +6,7 @@ import therapylogo from '../../../images/logo/therapylogo.png';
 
 const Header = () => {
     return (
-        <section className='header-container'>
+        <section className='header-container py-1'>
             <nav>
                 <Navbar id='navbar' expand='lg' sticky='top' variant="light">
                     <Container className='fst-italic'>
