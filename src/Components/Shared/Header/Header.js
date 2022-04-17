@@ -6,14 +6,14 @@ import therapylogo from '../../../images/logo/therapylogo.png';
 
 const Header = () => {
     return (
-        <div className='header-container'>
+        <section className='header-container'>
             <nav>
                 <Navbar id='navbar' expand='lg' sticky='top' variant="light">
                     <Container className='fst-italic'>
                         <Navbar.Brand as={Link} to='/'>
                           <div className='d-flex'>
                           <img className='therapy-logo' src={therapylogo} alt="" />
-                            <span className='custom-link fw-bold ps-2'>Royals Therapy</span>
+                            <span className='custom-link fw-bold ps-2'>Royels Therapy</span>
                           </div>
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -29,7 +29,7 @@ const Header = () => {
                     </Container>
                 </Navbar>
             </nav>
-        </div>
+        </section>
     );
 };
 

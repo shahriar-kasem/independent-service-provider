@@ -5,10 +5,10 @@ import Banner from '../Banner/Banner';
 
 const Home = () => {
     return (
-        <div>
+        <section>
             <Banner></Banner>
             <Footer></Footer>
-        </div>
+        </section>
     );
 };
 
