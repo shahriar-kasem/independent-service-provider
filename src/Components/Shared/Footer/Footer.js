@@ -9,7 +9,7 @@ const year = today.getFullYear();
 const fullDate = day +'/'+ month+'/'+year;
     return (
         <div className='footer-container'>
-            <p className='pt-2'>© All rights reserved. {fullDate} </p>
+            <p className='footer-text'>© All rights reserved. {fullDate} </p>
         </div>
     );
 };
