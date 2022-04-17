@@ -2,12 +2,12 @@ import './App.css';
 import { Routes, Route } from "react-router-dom";
 import Home from './Components/Pages/Home/Home/Home';
 import Services from './Components/Pages/Home/Services/Services';
-import Service from './Components/Pages/Home/Service/Service';
 import Blogs from './Components/Pages/Blogs/Blogs';
 import AboutMe from './Components/Pages/AboutMe/AboutMe';
 import Checkout from './Components/Pages/Home/Checkout/Checkout';
 import NotFound from './Components/NotFound/NotFound';
 import Header from './Components/Shared/Header/Header';
+import ServiceDetails from './Components/Pages/Home/Home/ServiceDetails.js/ServiceDetails';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Route path='/' element={<Home></Home>}></Route>
           <Route path='/home' element={<Home></Home>}></Route>
           <Route path='/services' element={<Services></Services>}></Route>
-          <Route path='/service/:serviceId' element={<Service></Service>}></Route>
+          <Route path='/service/:serviceId' element={<ServiceDetails></ServiceDetails>}></Route>
           <Route path='/blogs' element={<Blogs></Blogs>}></Route>
           <Route path='/about' element={<AboutMe></AboutMe>}></Route>
           <Route path='/checkout' element={<Checkout></Checkout>}></Route>
