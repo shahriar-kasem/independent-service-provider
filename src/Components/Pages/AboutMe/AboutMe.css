@@ -10,7 +10,7 @@
     width: 500px;
 }
 .about-text{
-    width: 80%;
+    width: 50%;
 }
 
 @media only screen and (max-width:576px){
