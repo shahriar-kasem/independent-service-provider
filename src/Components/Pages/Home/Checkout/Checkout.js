@@ -25,7 +25,7 @@ const Checkout = () => {
             <div>
                 {
                     data?.id &&
-                    <div className='service-details'>
+                    <div className='d-flex flex-column justify-content-center align-items-center'>
                         <h2 className='mb-3 text-info fw-bolder'>Fee: {data.price} TK</h2>
                         <img src={data.img} alt="" />
                         <p className='full-details'><span className='fw-bolder text-danger'>Full details:</span> {data.description}</p>
