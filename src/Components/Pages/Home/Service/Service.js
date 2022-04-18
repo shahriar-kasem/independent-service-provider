@@ -4,7 +4,7 @@ import './Service.css';
 
 const Service = ({ data }) => {
     const { id, name, description, price, img } = data;
-    const shortDescription = description.slice(0, 200) + '....';
+    const shortDescription = description.slice(0, 250) + '....';
     const navigate = useNavigate();
 
     const handleAppointment = id => {
@@ -18,8 +18,9 @@ const Service = ({ data }) => {
                 <h3><span className='text-primary'>{name}</span></h3>
                 <h5><span className='text-danger'>Therapy fee:</span> <span className='fw-bold therapy-fee'>{price}</span></h5>
                 <p><span className='fw-bold'>Therapy description:</span> {shortDescription}</p>
+                <p className='text-center text-danger'><small>Want an Appointment? Click Checkout!</small></p>
                 <div className='book-appoinment'>
-                    <button onClick={() => handleAppointment(id)} className='btn btn-primary fw-bold'>Book Appointment</button>
+                    <button onClick={() => handleAppointment(id)} className='btn btn-primary fw-bold'>Checkout</button>
                 </div>
             </div>
         </section>
