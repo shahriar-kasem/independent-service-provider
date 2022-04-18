@@ -4,7 +4,7 @@ const useServices = () => {
     const [fullData, setFullData] = useState([]);
 
     useEffect(() => {
-        fetch('Services.json')
+        fetch('https://shahriarkasem-web.github.io/api-repo/services.json')
             .then(res => res.json())
             .then(data => setFullData(data))
     }, []);

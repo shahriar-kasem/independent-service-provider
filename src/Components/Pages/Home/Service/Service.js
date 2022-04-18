@@ -4,7 +4,7 @@ import './Service.css';
 
 const Service = ({ data }) => {
     const { id, name, description, price, img } = data;
-    const shortDescription = description.slice(0, 250) + '....';
+    const shortDescription = description.slice(0, 200) + '....';
     const navigate = useNavigate();
 
     const handleAppointment = id => {

@@ -9,3 +9,7 @@
 .custom-anchor:hover{
     color: tomato;
 }
+.signup-submit-btn{
+    display: flex;
+    justify-content: center;
+}

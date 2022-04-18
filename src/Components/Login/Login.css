@@ -10,3 +10,7 @@
 .custom-anchor:hover {
     color: tomato;
 }
+.login-submit-btn{
+    display: flex;
+    justify-content: center;
+};

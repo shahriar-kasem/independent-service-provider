@@ -1,0 +1,14 @@
+
+/* .service-details{
+    display: flex;
+    justify-content: center;
+} */
+.service-details img{
+    width: 700px;
+}
+
+@media only screen and (max-width:576px){
+    .service-details img{
+        width: 400px;
+    }
+};

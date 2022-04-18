@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
@@ -19,13 +19,17 @@ const SignUp = () => {
         error,
     ] = useCreateUserWithEmailAndPassword(auth);
 
-    if (error) {
-        return console.error(error);
-    };
     if (user) {
         console.log(user);
     };
 
+    useEffect(() => {
+        if (error) {
+            return (
+                setErrorMessage(error.message)
+            );
+        }
+    }, [error]);
 
     const handleSignUp = (event) => {
         event.preventDefault();
@@ -57,12 +61,19 @@ const SignUp = () => {
                         <Form.Label>Confirm Password</Form.Label>
                         <Form.Control ref={confirmPasswordRef} type="password" placeholder="Confirm Password" required />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                    <Form.Group className="mb-3 text-center" controlId="formBasicCheckbox">
                         <p>Already have an account? <Link className='custom-anchor' to='/login'>Please Login</Link></p>
                     </Form.Group>
-                    <Button variant="primary" type="submit">
-                        Sign Up
-                    </Button>
+                    {
+                        <div className='text-danger fw-bold mb-3 text-center'>
+                            {errorMessage}
+                        </div>
+                    }
+                    <div className='signup-submit-btn'>
+                        <Button className='px-5 py-2 fw-bold' variant="primary" type="submit">
+                            Sign Up
+                        </Button>
+                    </div>
                 </Form>
                 <div>
                     <SocialLogin></SocialLogin>
