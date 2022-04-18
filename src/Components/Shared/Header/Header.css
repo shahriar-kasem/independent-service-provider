@@ -1,6 +1,4 @@
-.header-container{
-    background-color: antiquewhite;
-}
+
 .therapy-logo{
     border-radius: 20px
 }
@@ -13,7 +11,8 @@
 }
 .custom-btn{
     border: none;
-    background-color: antiquewhite;
+    border-radius: 20px;
+    padding: 2px 5px;
     color: rgb(101, 94, 118);
 }
 .custom-btn:hover{

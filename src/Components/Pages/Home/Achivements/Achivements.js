@@ -10,7 +10,7 @@ const Achivements = () => {
                 <div className='d-flex justify-content-center align-items-center w-50'>
                     <img style={{width: '400px'}} src={achivements} alt="" />
                 </div>
-                <div className='fst-italic w-50'>
+                <div className='achivement-text fst-italic w-50'>
                     <p className='me-5 mt-2 text-primary'>I'm a Distinguished Fellow of the Bangladesh Psychiatric Association. I also been an assistant clinical professor of psychiatry and human behavior in the University of California, Irvine, College of Medicine. I write more than 30 books with combined sales of about one million copies.</p>
                     <button className='btn btn-primary'>Read more</button>
                 </div>

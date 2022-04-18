@@ -4,5 +4,7 @@
 };
 
 @media only screen and (max-width:576px){
-
+    .achivement-text{
+    width: 100%;
+    };
 };

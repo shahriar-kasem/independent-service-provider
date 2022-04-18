@@ -23,12 +23,12 @@ const SocialLogin = () => {
         <section>
             <div>
                 <div>
-                    <div className='google-login-container'>
-                        <div className='google-login'></div>
-                        <p className='px-2 mt-2'>or</p>
-                        <div className='google-login'></div>
+                    <div className='d-flex justify-content-center align-items-center'>
+                        <div className='w-100 bg-info' style={{height: '1px'}}></div>
+                        <p className='px-2 mt-2 fw-bold text-danger'>or</p>
+                        <div className='w-100 bg-info' style={{height: '1px'}}></div>
                     </div>
-                    <div className='google-login-btn '>
+                    <div className='d-flex justify-content-center align-items-center'>
                         <button onClick={hangleGoogleLogin} className='btn btn-primary fw-bold w-50'>Google Login</button>
                     </div>
                 </div>
