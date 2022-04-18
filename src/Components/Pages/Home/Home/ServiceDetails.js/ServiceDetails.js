@@ -15,7 +15,7 @@ const ServiceDetails = () => {
 
     return (
         <section className='service-details-container'>
-            <h1>welcome to details page</h1>
+            <h1>welcome to details page: {id}</h1>
             {/* <div className='service-details'>
                 <img src={data.img} alt="" />
                 <h2><span className='text-primary'>{data.name}</span></h2>
