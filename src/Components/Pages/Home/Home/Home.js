@@ -5,6 +5,7 @@ import Banner from '../Banner/Banner';
 import useServices from '../../../../hooks/useServices';
 import Service from '../Service/Service';
 import { useNavigate } from 'react-router-dom';
+import Achivements from '../Achivements/Achivements';
 
 const Home = () => {
     const [fullData] = useServices();
@@ -29,6 +30,7 @@ const Home = () => {
                 </div>
 
             </section>
+            <Achivements></Achivements>
             <Footer></Footer>
         </section>
     );

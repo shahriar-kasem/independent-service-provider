@@ -1,7 +1,14 @@
 .footer-container {
     text-align: center;
     width: 100%;
-    background-color: rgb(241, 238, 245);
+    /* background-color: rgb(241, 238, 245); */
+    background-color: black;
+    color: white;
+    font-weight: 500;
+
+}
+.footer-container p:hover{
+    color: tomato;
 }
 .footer-text{
     padding: 10px 0px;

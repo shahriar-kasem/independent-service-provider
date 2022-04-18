@@ -1,4 +1,9 @@
 
+.service-container{
+    margin: 0px 10px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
 .service{
     padding: 10px;
     border-radius: 20px;
