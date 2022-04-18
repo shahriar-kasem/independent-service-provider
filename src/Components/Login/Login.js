@@ -1,10 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Button, Form } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Login.css';
 import auth from '../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import Loading from '../Shared/Loading/Loading';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -22,6 +25,8 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
     useEffect(() => {
         if (error) {
             return (
@@ -30,8 +35,12 @@ const Login = () => {
         }
     }, [error]);
 
-    if(user){
-        navigate(from, {replace: true});
+    if(loading || sending){
+        return <Loading></Loading>
+    }
+
+    if (user) {
+        navigate(from, { replace: true });
     };
 
     const handleLogin = (event) => {
@@ -39,6 +48,17 @@ const Login = () => {
         const password = passwordRef.current.value;
         event.preventDefault();
         signInWithEmailAndPassword(email, password);
+    };
+
+    const handleResetPassword = async () => {
+        const email = emailRef.current.value;
+        if(email){
+            await sendPasswordResetEmail(email);
+        toast('Sent email');
+        }
+        else{
+            toast('please enter your email address');
+        }
     };
 
     return (
@@ -55,22 +75,25 @@ const Login = () => {
                         <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                     </Form.Group>
                     <Form.Group className="text-center" controlId="formBasicCheckbox">
-                        <p>New to Royels Therapy? <Link className='custom-anchor' to='/signup'>Please Register</Link></p>
+
+                        <p className='m-0'>Forget Password? <button className='text-primary border-0 bg-white' onClick={handleResetPassword}><span className='custom-anchor'>Reset Password</span></button></p>
                     </Form.Group>
                     {
                         <div className='text-danger fw-bold mb-3 text-center'>
                             {errorMessage}
                         </div>
                     }
-                    <div className='login-submit-btn'>
+                    <div className='d-flex justify-content-center align-items-center'>
                         <Button className='px-5 py-2 fw-bold' variant="primary" type="submit">
                             Login
                         </Button>
                     </div>
+                    <p className='m-3 text-center'>New to Royels Therapy? <Link className='custom-anchor' to='/signup'>Please Register</Link></p>
                 </Form>
                 <div>
                     <SocialLogin></SocialLogin>
                 </div>
+                <ToastContainer />
             </div>
         </section>
     );

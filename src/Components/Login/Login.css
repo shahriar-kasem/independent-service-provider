@@ -1,15 +1,13 @@
 .login-container {
     display: flex;
     justify-content: center;
-}
-
+};
 .custom-anchor {
     text-decoration: none;
-}
-
+};
 .custom-anchor:hover {
     color: tomato;
-}
+};
 .login-submit-btn{
     display: flex;
     justify-content: center;
