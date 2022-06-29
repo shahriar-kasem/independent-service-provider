@@ -4,7 +4,7 @@
 Click here: https://independent-service-prov-b402c.web.app 
 
 ## [Server-side link](https://github.com/shahriar-kasem/independent-service-provider)
-Click here: https://github.com/shahriar-kasem/independent-service-provider 
+Click here: https://github.com/shahriarkasem/independent-service-provider 
 
 ### Website overview:
 * Developed a normal website for independent service provider
